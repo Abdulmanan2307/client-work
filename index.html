@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="sketch.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Noto+Sans+TC&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="t-container">
+      <div  class="flex justify-center" id="intro-grid">
+        <div>
+          <p class="hey-text flex justify-start">Hey there,</p>
+          <p id="jadeText" class="intro-jade">I&#39;m Jade!</p>
+          <p class="intro-text">
+            I am an Interaction Designer that uses a Social Work heart and a
+            Customer Service Soul to craft user-friendly solutions and
+            meaningful digital experiences.
+          </p>
+        </div>
+        <!-- <div ></div> -->
+        <!-- <div >
+               .
+            </div> -->
+        <div class="home-img">
+          <img
+            class=""
+            id="myImage"
+            src="img/jjguerin.png"
+            onmouseover="scaleImage(this, 0.75)"
+            onmouseout="scaleImage(this, 1.0)"
+          />
+        </div>
+        <!-- <div class="nxt-btn">
+                <img width="100" height="100" src="https://img.icons8.com/sf-regular-filled/96/00a86b/double-down.png" alt="double-down">
+                </div> -->
+      </div>
+      <!--intro-->
+
+      <div id="particle-container"></div>
+
+      <div class="main">
+        <div class="rect-bg">
+          <img class="img-2" src="img/SafePalMockup.png" />
+          <!-- Add the hover content here (initially hidden) -->
+          <div class="hover-container">
+            <div class="hover-content">
+              <h2>SafePal</h2>
+              <div class="hover-prj-text">
+                <p>
+                  Conducted a comprehensive analysis of SafePal&#39;s desktop
+                  and mobile sites, identified improvements and provided
+                  detailed recommendations. Proposed a fresh design direction,
+                  delivered polished wireframes and designs via Figma,
+                  kickstarted an ongoing revamp.
+                </p>
+              </div>
+              <div class="hover-list">
+                <ul>
+                  <li>Research</li>
+                  <li>UX/UI Design</li>
+                  <li>Wireframing</li>
+                  <li>Prototyping</li>
+                </ul>
+              </div>
+              <div class="hover-btn">
+                <a
+                  class="hover-button"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Coming Soon!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>SafePal</h2>
+        <p>
+          Web redesign. SafePal is a crypto wallet solution that is designed to
+          safeguard users’ digital assets.
+        </p>
+      </div>
+
+      <div class="main">
+        <div class="rect-bg">
+          <img class="img-2" src="img/willowsreststationarymockup 1.png" />
+        </div>
+        <h2>Willow&#39;s Rest Green Burial</h2>
+        <p>
+          Willow&#39;s Rest Green Burial offers a natural and eco-friendly
+          alternative for final resting places at the City of Niagara Falls
+          Burial Services, while promoting sustainability and preservation of
+          nature.
+        </p>
+      </div>
+
+      <div class="main">
+        <div class="rect-bg">
+          <img class="img" src="img/ubereatsflow.png" />
+        </div>
+        <h2>UberEats</h2>
+        <p>
+          Dark Pattern Design Project - Exploration on the various ways that
+          dark patterns exists within UberEats app.
+        </p>
+      </div>
+
+      <div class="main">
+        <img class="rect-bg" src="img/SchoolMessengerImage.png" />
+        <h2>School Messenger App</h2>
+        <p>
+          A redesign project that focused on enhancing inclusivity and
+          accessibility within this communication app to maintain seamless
+          interactions between schools - educators - parents.
+        </p>
+      </div>
+
+      <!--<div class="main">
+            <div class="rect-bg">
+                <img class="img-2" src="img/DanaMockup4.png" /></div>
+            <h2>Dana Tanamachi</h2>
+            <p>
+                Typography Project - a web design that celebrates the renowned lettering artist and graphic design, who is
+                known for exceptional hand-lettering skills and intricate typographic designs.
+            </p>
+        </div>-->
+
+      <header>
+        <div id="navbar">
+          <div class="logotype">
+            <a href="index.html">
+              <span class="jade">JADE</span>
+              <span class="guerin">GUERIN</span>
+            </a>
+          </div>
+          <div class="nav-links">
+            <a href="#" class="active"> Work </a>
+            <a href="about.html"> About</a>
+            <a href="#"> Resume </a>
+          </div>
+        </div>
+      </header>
+
+      <footer>
+        <div class="ft-text">
+          <h3>Let&#39;s connect!</h3>
+          <p>Get in touch for opportunities or just to say hi!</p>
+        </div>
+        <div class="contact-links">
+          <a
+            href="www.linkedin.com/in/jade-guerin-a27b6783"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              width="80"
+              height="80"
+              src="https://img.icons8.com/ios-filled/50/00a86b/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/jj.jadery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              width="80"
+              height="80"
+              src="https://img.icons8.com/ios-filled/80/00a86b/instagram-new--v1.png"
+              alt="instagram-new--v1"
+            />
+          </a>
+          <a
+            href="mailto:jryguerin@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              width="80"
+              height="80"
+              src="https://img.icons8.com/ios-filled/50/00a86b/message-squared.png"
+              alt="message-squared"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!--container-->
+  </body>
+</html>

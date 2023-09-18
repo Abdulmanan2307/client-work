@@ -1,0 +1,284 @@
+ body {
+     font-family: "open sans", helvetica, sans-serif;
+
+
+ }
+
+ #navbar {
+     background-color: #f4fffb;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logotype {
+     display: inline-block;
+     font-size: 30px;
+     letter-spacing: 0;
+     line-height: normal;
+     margin: 0 30px;
+ }
+
+ .nav-links {
+     font-family: "Open Sans", Helvetica;
+     font-weight: 400;
+     font-size: 24px;
+     letter-spacing: 0;
+     text-decoration: none;
+     display: flex;
+     Display nav-links as a horizontal list
+ }
+
+ .nav-links a {
+     color: #3f3434a6;
+     text-decoration: none;
+     margin: 0 50px;
+     /*  Adjust margin to create space between links */
+ }
+
+ .jade {
+     font-family: "Bitter", Helvetica;
+     color: #00a86b;
+ }
+
+ .guerin {
+     font-family: "Open Sans", Helvetica;
+     color: #002517;
+ }
+
+ a:hover {
+     color: #00a86b;
+ }
+
+ .active {
+     color: #002517;
+     border-bottom-width: 2px;
+     border-bottom-style: solid;
+     border-color: #00a86b;
+ }
+
+ .nav-links a.active {
+     color: #002618;
+     border-bottom: 2px solid #00a86b;
+ }
+
+ #particle-container {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     /* This places the particle system behind other content  */
+ }
+
+ /* .main { 
+ 
+    padding-bottom: 60px;
+
+} */
+
+ /* #intro-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}  */
+
+ .intro-text {
+
+     font-family: "Open Sans", Helvetica;
+     font-weight: 400;
+     color: #003321;
+     font-size: 30px;
+     letter-spacing: 0;
+     line-height: normal;
+     text-align: left;
+ }
+
+
+ .hey-text {
+     font-family: "Bitter", Helvetica;
+     font-weight: 400;
+     color: #405c52;
+     font-size: 100px;
+     letter-spacing: 0;
+     line-height: normal;
+ }
+
+ .intro-jade {
+     font-family: "Nothing You Could Do", cursive;
+     font-weight: 1000;
+     font-size: 128px;
+     text-align: right;
+     letter-spacing: 0;
+     line-height: normal;
+     color: #00a86b;
+     transition: color 0.2s;
+     /*  Add a smooth color transition  */
+ }
+
+ @keyframes colorChange {
+     0% {
+         color: #00a86b;
+         /* Initial color */
+     }
+
+     33.33% {
+         color: #003321;
+         /* Second color after 1/3 of the animation duration */
+     }
+
+     66.66% {
+         color: #59c69F;
+         /* Third color after 2/3 of the animation duration */
+     }
+
+     100% {
+         color: #00a86b;
+         /* Back to the initial color */
+     }
+ }
+
+ #jadeText {
+     animation: colorChange 12s linear infinite;
+     /* 6 seconds for the full animation loop (3 colors * 2 seconds per color) */
+ }
+
+ /* .home-img { 
+     grid-area: 1/ 3 / 3 / 4;
+ } */
+
+ .nxt-btn {
+     grid-area: 2 / 2 / 3 / 3;
+     margin-top: 200px;
+     margin-left: 200px;
+ }
+
+ /* .img {
+     height: auto;
+     width: 100%;
+     padding: 20px;
+ } */
+
+ .img-2 {
+     width: 75%;
+ }
+
+ .rect-bg {
+     position: relative;
+     width: 1050px;
+     height: 590.57px;
+     background-color: #59c69f;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ h2 {
+     width: 1050px;
+     font-family: "Bitter", Helvetica;
+     font-weight: 600;
+     color: #405c52;
+     font-size: 40px;
+     text-align: center;
+     letter-spacing: 0;
+     line-height: normal;
+     margin-bottom: -10px;
+ }
+
+ p {
+     width: 1050px;
+     font-family: "Open Sans", Helvetica;
+     font-weight: 300;
+     color: #003321;
+     font-size: 20px;
+     text-align: left;
+     letter-spacing: 0;
+ }
+
+ footer {
+     bottom: 0;
+     width: 100%;
+     color: #f4fffb;
+     margin-top: -60px;
+ }
+
+ h3 {
+     font-family: "Nothing You Could Do", Helvetica;
+     font-weight: 600;
+     color: #003321;
+     font-size: 64px;
+     letter-spacing: 3px;
+     text-align: center;
+ }
+
+ footer p {
+     margin: 0 auto;
+     text-align: center;
+     margin-top: -40px;
+ }
+
+ .contact-links {
+     align-items: center;
+     display: block;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+ .logotype a {
+     text-decoration: none;
+ }
+
+ /* CSS for the hover container (initially hidden) */
+ .hover-container {
+    
+     left: 0;
+     width: 100%;
+     /* Adjust width as needed */
+     height: 100%;
+     /* Transparent initially */
+     opacity: 0;
+     display: flex;
+     overflow: hidden;
+     transition: opacity 0.3s, background-color 0.3s;
+ }
+
+ /* Style for the hover content */
+ .hover-content {
+     text-align: left;
+     width: 75%;
+     color: #003321;
+     font-size: 24px;
+     /* Rest of your styles for hover content */
+ }
+
+ .hover-btn {
+     border-bottom-width: 2px;
+     border-bottom-style: solid;
+     border-color: #00a86b;
+     font-style: "Nothing You Could Do", Helvetica;
+ }
+
+ .hover-content a {
+     font-size: 50px;
+     text-align: right;
+     text-decoration: none;
+     font-style: "Nothing You Could Do", Helvetica;
+     color: #003321;
+ }
+
+ /* Hover effect */
+ .rect-bg:hover .hover-container {
+     opacity: 1;
+     background-color: rgba(255, 255, 255, 0.95);
+     /* 5% transparency white background on hover */
+ }
+ 
