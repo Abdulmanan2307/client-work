@@ -1,0 +1,226 @@
+/* Hide the second image by default */
+.image-container .image:nth-child(2) {
+    display: none;
+}
+
+/* Apply styles for the container */
+.image-container {
+    position: relative;
+    width: 300px; /* Set a fixed width or adjust as needed */
+    height: 200px; /* Set a fixed height or adjust as needed */
+}
+
+/* Apply styles for the images */
+.image {
+    width: 100%;
+   
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Create the hover effect */
+.image-container:hover .image:first-child {
+    display: none;
+}
+
+.image-container:hover .image:nth-child(2) {
+    display: block;
+}
+
+
+
+
+
+/* 
+}
+  /* Style the card 
+.card {
+  width: 80%;
+  height: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+*/
+/* Style the front image 
+.front-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;*/ /* Ensure the image covers the card 
+  transition: opacity 0.5s;
+}*/
+
+/* Define the hover effect 
+.card:hover .front-image {
+  opacity: 0; *//* Hide the initial image on hover 
+}
+*/
+/* Define the new front image 
+.card:hover::before {
+  content: url("/img/Property\ 1=hover.png");*/ /* Set the URL of the new image 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+  
+  /* Apply styles to the container and images 
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image1,
+  .image2 {
+    max-width: 100%;
+    height: auto;
+  }*/
+  
+  /* Hide the second image by default 
+  .image2 {
+    display: none;
+  }*/
+  
+  /* Apply hover effect
+  .image-container:hover .image1 {
+    display: none;
+  }
+  
+  .image-container:hover .image2 {
+    display: block;
+    position: absolute;
+    top: 0;
+  } */
+
+   .img_text {
+  position: absolute;
+  top: 40px;
+  background:  rgba(89, 198, 159, 0.65);
+  padding: 20px;
+} 
+
+  .hello_text {
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #long_text {
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 51, 33, 1);
+  }
+  .heading-deco {
+    font-family: Noto Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 51, 33, 1);
+    width: 144px;
+    border-bottom: 3px solid rgba(0, 168, 107, 1);
+  }
+  
+  /* Style the dot or circle */
+  .dot {
+    width: 10px; /* Adjust the width to set the size of the dot or circle */
+    height: 10px; /* Same value as width to create a circle */
+    background: rgba(89, 198, 159, 1); /* Dot or circle color */
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  }
+  
+  .second_heading {
+    font-family: Noto Serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 25px;
+  }
+  
+  .text_design {
+    font-family: Noto Serif;
+    font-size: 24px;
+    font-weight: 400;
+      line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 25px;
+  }
+  
+  .connect_text {
+    font-family: Nothing You Could Do;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 51, 33, 1);
+  }
+  
+  /* @media (max-width: 786px) {
+    
+  }  */
+
+/* Apply styles for the container */
+.cont {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+/* Apply styles for the words container */
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+  margin-right: 20px; /* Add spacing between words and circle */
+}
+
+/* Apply styles for individual words */
+.word {
+
+  text-align: center;
+  padding: 10px;
+}
+
+/* Apply styles for the circle */
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .cont {
+      flex-direction: column; /* Display as column on small screens */
+      align-items: flex-start; /* Align content to the left */
+  }
+
+  .words {
+      flex-basis: 100%; /* Words occupy full width in a column */
+      margin-right: 0; /* Remove spacing between words and circle */
+  }
+
+  .circle {
+      margin-top: 20px; /* Add spacing between circle and words */
+  }
+}

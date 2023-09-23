@@ -43,13 +43,8 @@
     crossorigin="anonymous"></script>
    
 </head>
-
-
-
 <body>
-    
-
-  <div class="">
+      <div class="">
     <div class=" flex flex-wrap justify-center">
       <div>
         <p class="hey-text">Hey there,</p>
@@ -66,7 +61,31 @@
       </div>
     </div>
 
-    <div>
+ 
+    <nav class="navbar">
+      <img style="display: flex; justify-content: start;" src="./img/NavBar-removebg-preview.png" alt="">
+      <button  class="navbar-toggle">&#9776;</button>
+      <ul class="nav-list">
+          <li style="display: flex; justify-content: end;"><a class="nav-link-color" href="#"><img class="icon" src="./img/one-nav.png" alt="" srcset="">Home</a></li>
+          <li style="display: flex; justify-content: end;"><a class="nav-link-color" href="#"><img class="icon" src="./img/two - nav.png" alt="" srcset="">Projects</a></li>
+          <li style="display: flex; justify-content: end;"><a class="nav-link-color" href="#"><img class="icon" src="./img/third - nav.png" alt="" srcset="">About</a></li>
+          <li style="display: flex; justify-content: end;"><a class="nav-link-color" href="#"><img class="icon" src="./img/fourth - nav.png" alt="" srcset="">Resume</a></li>
+
+      </ul>
+  </nav>
+
+    <!-- <div>
+      <nav class="navbar">
+        <ul class="nav-list">
+            <li><span class="icon">🏠</span><a href="#"> Home</a></li>
+            <li><span class="icon">📁</span><a href="#"> Portfolio</a></li>
+            <li><span class="icon">📋</span> <a href="#">About</a></li>
+            <li><span class="icon">✉️</span><a href="#"> Contact</a></li>
+        </ul>
+    </nav>
+    </div> -->
+
+    <!-- <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -91,7 +110,7 @@
           </div>
         </div>
       </nav>
-    </div>
+    </div> -->
     
     <div class="flex justify-center">
       <div>
@@ -245,7 +264,7 @@
           </a>
         </div>
 
-        <!-- <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
             <img src="/img/one logo.png" alt="">
             <p class="connect_text">Let’s connect!</p>
             
@@ -258,6 +277,15 @@
       </div>
     </footer> -->
 
+    <script>
+      const toggleButton = document.querySelector('.navbar-toggle');
+const navList = document.querySelector('.nav-list');
+
+toggleButton.addEventListener('click', () => {
+    navList.classList.toggle('show');
+});
+
+    </script>
 
 </body>
 

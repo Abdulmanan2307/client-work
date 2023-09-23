@@ -1,0 +1,882 @@
+/* Style the carousel container */
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  /* Adjust the max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style the carousel slides */
+.carousel-slides {
+  width: 100%;
+  display: flex;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the slider indicators */
+.slider-indicators {
+  text-align: center;
+  margin-top: 10px;
+  /* Adjust spacing from the carousel */
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  /* Adjust spacing between indicators */
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #333;
+}
+
+/* Style the carousel control button */
+.carousel-control {
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.section-one-heading {
+  font-family: Noto Serif;
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-one-para-one {
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-one-para-two {
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-one-para-three {
+  display: flex;
+  justify-content: center;
+  font-family: Noto Serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 168, 107, 1);
+}
+
+.section-one-para-four {
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: gba(0, 51, 33, 1);
+}
+
+.section-two-heading {
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#underlined-text {
+  text-decoration: underline;
+  color: rgb(2, 10, 7);
+}
+
+.section-two-para-one {
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section-two-para-two {
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.section-three-heading {
+  font-family: Noto Serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+.section-three-para-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+/* Media query for large screens   */
+ @media (min-width: 768px) {
+  .right-container{
+    display: none;
+  }
+
+  
+
+
+  
+
+  
+  #swipee{
+    display: none;
+  }
+
+  .swipe-images{
+    display: none;
+  }
+  .swipe-indicator{
+    display: none;
+  }
+
+
+  #right{
+    display: none;
+  }
+  .right-images{
+    display: none;
+  }
+  .right-indicator{
+    display: none;
+  }
+
+
+  #left{
+    display: none;
+  }
+  .left-images{
+    display: none;
+  }
+  .left-indicator{
+    display: none;
+  }
+
+
+  #back{
+    display: none;
+  }
+  .back-images{
+    display: none;
+  }
+  .back-indicator{
+    display: none;
+  }
+
+  #joe{
+    display: none;
+  }
+  .joe-images{
+    display: none;
+  }
+  .joe-indicator{
+    display: none;
+  }
+
+  #last{
+    display: none;
+  }
+  .last-images{
+    display: none;
+  }
+  .last-indicator{
+    display: none;
+  }
+
+  #see{
+    display: none;
+  }
+  .see-images{
+    display: none;
+  }
+  .see-indicator{
+    display: none;
+  }
+} 
+
+
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+  #edit {
+    margin-left: 36px;
+  }
+
+  #text-4 {
+    margin-left: 36px;
+  }
+  #heading__Deco{
+    margin-left: 65px;
+  }
+  
+  #sec-5{
+    margin-left: 30px;
+  }
+  .box2{
+    width: 150px;
+    height: 41px;
+    background: rgba(0, 168, 107, 1);
+  }
+  .box{
+    display: none;
+  }
+
+  #main_pic{
+    display: none;
+  }
+
+}
+
+.cont {
+  display: flex;
+}
+
+#section-three-para-one-id {
+  margin-left: 5px;
+}
+
+.section-four-heading {
+  font-family: Open Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-four-para-one {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-four-heading-two {
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+/* Style the responsive rectangle */
+.rectangle {
+  width: 10px; /* Adjust the width as needed */
+  height: 155px; /* Adjust the height as needed */
+  background: rgba(0, 168, 107, 1); /* Background color */
+  /* Center the rectangle horizontally */
+}
+
+.section-four-para-two {
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-five-heading {
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-five-para-one {
+  font-family: Noto Serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 168, 107, 1);
+}
+
+/* Style the responsive rectangle */
+.box {
+  width: 30px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+  background: rgba(0, 168, 107, 1); /* Background color */
+  /* Center the rectangle horizontally */
+}
+
+.heading-line {
+  width: 155px; /* Adjust the width as needed */
+  height: 3px; /* Adjust the height as needed */
+  background: rgba(0, 168, 107, 1); /* Background color */
+  /* Center the rectangle horizontally */
+}
+
+.section-five-heading-two {
+  
+  font-family: Noto Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-five-para-two {
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 51, 33, 1);
+}
+
+.section-five-heading-three{
+  font-family: Noto Serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+color: rgba(0, 51, 33, 1);
+
+}
+
+.section-five-para-three{
+  font-family: Noto Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(0, 51, 33, 1);
+}
+
+#section-five-id{
+  background: rgba(191, 233, 218, 1);
+  width: 70%;
+
+}
+
+
+.line{
+  width: 263px;
+  height: 2px;
+  background: rgba(0, 168, 107, 1);
+}
+.line2{
+  width: 360px;
+  height: 2px;
+  background: rgba(0, 168, 107, 1);
+}
+.section-six-heading{
+  font-family: Noto Sans;
+font-size: 32px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.section-six-para-one{
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+color: rgba(0, 51, 33, 1);
+
+}
+
+.section-six-heading-two{
+  font-family: Noto Serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+
+color: rgba(0, 168, 107, 1);
+}
+
+.section-six-heading-three{
+  color: rgba(52,78,65,255);
+  
+}
+
+.bio-deco{
+  height: 30px;
+  background-color: rgba(218,216,204,255);
+  width: 560px;
+  margin-left: 20px;
+  margin-top: 36px;
+}
+
+
+/* SWIPE */
+
+
+/* Apply styles for the slider container */
+.swipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.swipeslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.swipe {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.swipe.active {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.swipe-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.swipe-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.swipe-indicator.active {
+  background-color: #3498db;
+}
+
+
+
+
+
+/* RIGHT */
+
+/* Apply styles for the slider container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.rightslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.right {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.right.actives {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.right-indicatores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.right-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.right-indicator.actives {
+  background-color: #3498db;
+}
+
+
+
+/* LEFT */
+
+/* Apply styles for the slider container */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.leftslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.left {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.left.activ {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.left-indicatorss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.left-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.left-indicator.activ {
+  background-color: #3498db;
+}
+
+
+
+
+/* BACK */
+
+/* Apply styles for the slider container */
+.back-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.backslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.back {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.back.activy {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.back-indicat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.back-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.back-indicator.activy {
+  background-color: #3498db;
+}
+
+/* JOE */
+
+
+/* Apply styles for the slider container */
+.joe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.joeslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.joe {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.joe.activv {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.joe-indicatorsy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.joe-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.joe-indicator.activv {
+  background-color: #3498db;
+}
+
+/* SEE */
+
+
+/* Apply styles for the slider container */
+.last-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.lastslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.last {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.last.acti {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.last-indicatr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.last-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.last-indicator.acti {
+  background-color: #3498db;
+}
+
+/* SWIPE */
+
+
+/* Apply styles for the slider container */
+.see-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.seeslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.see {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.see.act {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.see-indica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.see-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.see-indicator.act {
+  background-color: #3498db;
+}

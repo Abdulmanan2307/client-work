@@ -2,6 +2,13 @@ body {
   font-family: "open sans", helvetica, sans-serif;
 }
 
+/* .home-img{
+ 
+}
+.image-deco{
+ position: relative;
+} */
+
 .design-magic-heading {
   font-family: "Noto Serif";
   font-size: 40px;
@@ -208,16 +215,6 @@ body {
   left: 0;
 }
 
-/* about me CSS */
-
-.img_text {
-  position: absolute;
-  top: 40px;
-  background: rgba(89, 198, 159, 0.65);
-
-  padding: 20px;
-}
-
 /* Apply styles to the container and images */
 .image-container {
   position: relative;
@@ -235,7 +232,7 @@ body {
   display: none;
 }
 
-/* Apply hover effect */
+/* /* Apply hover effect  */
 .image-container:hover .image1 {
   display: none;
 }
@@ -246,6 +243,156 @@ body {
   top: 0;
 }
 
+/* Style the navbar */
+.navbar {
+  background: rgba(245, 255, 252, 1);
+  color: rgba(64, 92, 82, 1);
+}
+
+/* Style the navigation list */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style the list items */
+.nav-list li {
+  text-align: center;
+}
+
+/* Style the links */
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the icons */
+.icon {
+  font-size: 24px;
+}
+
+/* Collapse the menu on small screens */
+@media (max-width: 768px) {
+  .navbar-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .navbar-toggle {
+    color: rgba(64, 92, 82, 1);
+  }
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      top: 60px; /* Adjust as needed to align with the button */
+      color:  rgba(245, 255, 252, 1);
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .nav-list.show {
+      display: flex;
+  }
+
+  .nav-list li {
+      margin: 5px 0;
+  }
+
+  
+  
+}
+
+/* Hide the button and icons on large screens */
+@media (min-width: 769px) {
+  .navbar-toggle,
+  .icon {
+      display: none;
+  }
+  
+}
+
+.nav-link-color{
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+margin-right: 25px;
+color: #003321;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about me CSS */
+
+/* .img_text {
+  position: absolute;
+  top: 40px;
+  background: rgba(64, 92, 82, 1);
+
+  padding: 20px;
+} */
+
+/* Apply styles to the container and images
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image1,
+.image2 {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* Hide the second image by default
+.image2 {
+  display: none;
+} */
+
+/* /* Apply hover effect 
+.image-container:hover .image1 {
+  display: none;
+}
+
+.image-container:hover .image2 {
+  display: block;
+  position: absolute;
+  top: 0;
+} 
 .hello_text {
   font-family: Noto Sans;
   font-size: 28px;
@@ -273,14 +420,15 @@ body {
   color: rgba(0, 51, 33, 1);
   width: 144px;
   border-bottom: 3px solid rgba(0, 168, 107, 1);
-}
+}*/
 
-/* Style the dot or circle */
-.dot {
-  width: 10px; /* Adjust the width to set the size of the dot or circle */
-  height: 10px; /* Same value as width to create a circle */
-  background: rgba(89, 198, 159, 1); /* Dot or circle color */
-  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+
+/* Style the dot or circle
+.dot { */
+ /*  width: 10px; Adjust the width to set the size of the dot or circle */
+/*  height: 10px;  Same value as width to create a circle */
+ /*  background: rgba(89, 198, 159, 1); Dot or circle color */
+ /*  border-radius: 50%; Make it a circle by setting border-radius to 50% 
 }
 
 .second_heading {
@@ -293,7 +441,6 @@ body {
   color: rgba(0, 0, 0, 1);
   margin-top: 25px;
 }
-
 .text_design {
   font-family: Noto Serif;
   font-size: 24px;
@@ -305,6 +452,7 @@ body {
   margin-top: 25px;
 }
 
+
 .connect_text {
   font-family: Nothing You Could Do;
   font-size: 64px;
@@ -313,4 +461,4 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: rgba(0, 51, 33, 1);
-}
+}*/

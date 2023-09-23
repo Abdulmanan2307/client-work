@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="/casestyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Noto+Sans+TC&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+  <!-- <script
+      language="javascript"
+      type="text/javascript"
+      src="sketch.js"
+    ></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="">
+    <div class="carousel-container">
+      <div class="carousel-slides">
+        <div class="carousel-slide">
+          <img src="/img/DanaMockup4.png" alt="Slide 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/img/Property 1=Variant3.png" alt="Slide 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/img/ubereatsflow.png" alt="Slide 3" />
+        </div>
+      </div>
+      <div class="slider-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+      </div>
+      <button class="carousel-control next">&#9654;</button>
+    </div>
+
+    <div class="container">
+      <h1 class="section-one-heading">
+        Unlocking Inclusivity: School Messenger App Redesign
+      </h1>
+      <p class="section-one-para-one">
+        Imagine a school communication app designed to simplify life for
+        parents, teachers, and schools. Sounds like a dream, right?
+        <span class="section-one-para-two">But what if this app left some parents feeling like they were
+          locked out of the conversation, even when they wanted to be part of
+          it? </span>That's where my School Messenger App redesign journey began. Fueled
+        by personal frustration and a determination to improve, I set out to
+        make his app into a more inclusive and user-friendly tool for all
+        types of families that is truly accessible and engaging for everyone!
+      </p>
+      <p class="section-one-para-three">
+        How might we revamp the School Messenger <br />
+        App to be the ultimate inclusivity champ?
+      </p>
+      <p class="section-one-para-four">
+        We're talking about making it a communication powerhouse for all
+        parents and <br />
+        guardians, no matter how their family is shaped.
+      </p>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+      <h2 id="underlined-text" class="section-two-heading">The Problem</h2>
+      <div class="section-two-para-one">
+        <p style="margin-top: 27px">
+          School Messenger App is the bridge between schools and parents, a
+          digital hotline for information exchange, updates, and
+          notifications. Its mission? To help parents stay engaged with their
+          kids and schools like a pro.
+        </p>
+        <p style="margin-top: 22px">
+          But wait, there’s a plot twist!
+          <span class="section-two-para-two">It’s not as inclusive as it should be.</span>
+        </p>
+        <p style="margin-top: 22px">
+          It currently lacks inclusivity for non-traditional families,
+          limiting access to parents whose email addresses are not registered
+          within the school system, even if they are listed as secondary or
+          emergency contacts for a child. This limitation is based on the
+          primary contacts listed during school registration.
+        </p>
+        <p style="margin-top: 22px">
+          In a world where families come in all shapes and sizes, the current
+          app's design and functionality doesn’t quite get the memo. This
+          oversight creates a barrier for many parents and guardians,
+          hindering the app’s goal of fostering parental engagement.
+        </p>
+      </div>
+
+      <!-- <div style="margin-top: 100px; background: rgba(245, 255, 252, 1);" > 
+            <div></div>
+            <h1 class="section-three-heading" >Why do I care?</h1>
+            <div class="row">
+                <p class="col-6 section-three-para-one">Picture this: I'm juggling the everyday chaos of parenting in a modern and blended family setup. Now, let's throw in an app that sometimes acts like the gatekeeper of an exclusive club. It’s frustrating being locked out of vital school communication just because my email didn't match some list for some of my children. </p>
+                <p class="col-6 section-three-para-one">And I’m not alone. Many families, like mine, don't fit the cookie-cutter mold. We deserve a communication tool that embraces our diversity and makes life easier, not more complicated - because every parent deserves a stress-free school experience, whether you're in a traditional family, a blended one, or somewhere in between.</p>
+            </div>
+        </div> -->
+    </div>
+
+    <div style="margin-top: 100px; background: rgba(245, 255, 252, 1)">
+      <div class="container">
+        <h1 class="section-three-heading">Why do I care?</h1>
+        <div style="margin-top: 27px" class="cont d-flex">
+          <p class="section-three-para-one">
+            Picture this: I'm juggling the everyday chaos of parenting in a
+            modern and blended family setup. Now, let's throw in an app that
+            sometimes acts like the gatekeeper of an exclusive club. It’s
+            frustrating being locked out of vital school communication just
+            because my email didn't match some list for some of my children.
+          </p>
+          <p id="section-three-para-one-id" class="section-three-para-one">
+            And I’m not alone. Many families, like mine, don't fit the
+            cookie-cutter mold. We deserve a communication tool that embraces
+            our diversity and makes life easier, not more complicated -
+            because every parent deserves a stress-free school experience,
+            whether you're in a traditional family, a blended one, or
+            somewhere in between.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 100px" class="container">
+      <h1 id="underlined-text" class="section-four-heading">
+        Research: Unlocking Insights
+      </h1>
+      <p style="margin-top: 27px" class="d-flex justify-content-center section-four-para-one">
+        To tackle the challenges ahead, I embarked on a journey of exploration
+        using the KWHL table. <br />
+        It's a bit like putting on my detective hat to uncover the mysteries
+        of the School Messenger <br />App's user experience. <br />
+        <br />
+        I scoured Google Play Store reviews, paying attentions to common
+        themes and user concerns. <br />
+        I also engaged in a semi-structured email interview with a participant
+        who had previously <br />
+        expressed dissatisfaction with the School Messenger APP. While the
+        conversation wasn't <br />recorded, we set up a digital Q&A session. I
+        also delved into the academic world with some <br />
+        good old literature reviews.
+      </p>
+
+      <!-- TEXT 1  -->
+
+      <div style="margin-top: 67px" class="cont d-flex justify-content-center">
+        <h2 style="margin-top: 55px; margin-right: 56px" class="section-four-heading-two">
+          What do I KNOW?
+        </h2>
+        <div style="margin-left: 33px" class="d-flex flex-row">
+          <div class="rectangle"></div>
+          <p style="margin-left: 22px" class="section-four-para-two">
+            There is a correlation between parental engagement and student
+            <br />achievement and success. <br />
+            <br />
+            Many services are designed with the nuclear family structures in
+            mind. <br />
+            Non-traditional families experience difficulties access
+            information and <br />services pertaining to their children.
+          </p>
+        </div>
+      </div>
+
+      <!-- TEXT 2-->
+
+      <div style="margin-top: 33px" class="cont d-flex justify-content-center">
+        <h2 style="margin-top: 55px; margin-right: 50px" class="section-four-heading-two">
+          WHAT do I need to find <br />
+          out?
+        </h2>
+        <div id="edit" class="d-flex flex-row">
+          <div class="rectangle"></div>
+          <p style="margin-left: 22px" class="section-four-para-two">
+            Why is it so difficult for parents from non-traditional family
+            structures <br />
+            access information and services for and to their children? <br />
+            <br />
+            How do parents feel when they cannot use specific functions
+            related for <br />
+            the child? Or if a child is not registered as part of their family
+            cohort?
+          </p>
+        </div>
+      </div>
+
+      <!-- TEXT 3 -->
+
+      <div style="margin-top: 33px" class="cont d-flex justify-content-center">
+        <h2 style="margin-top: 55px; margin-right: 38px" class="section-four-heading-two">
+          HOW will I find the info?
+        </h2>
+        <div id="text-4" class="d-flex flex-row">
+          <div class="rectangle"></div>
+          <p style="margin-left: 22px" class="section-four-para-two">
+            APP reviews online of parents or teachers who use the APP <br />
+            Interviews with a parent of a non-traditional family <br />
+            Observe a parent using the APP using POEMS Observation Framework
+            <br />
+            Literature reviews on non-traditional families and parental <br />
+            school engagement
+          </p>
+        </div>
+      </div>
+
+      <!-- TEXT 4 -->
+
+      <div style="margin-top: 33px" class="cont d-flex justify-content-center">
+        <h2 style="margin-top: 55px; margin-right: 45px" class="section-four-heading-two">
+          What have I LEARNED?
+        </h2>
+        <div id="edit" class="d-flex flex-row">
+          <div class="rectangle"></div>
+          <p style="margin-left: 22px" class="section-four-para-two">
+            Student success is correlated with the level of parental
+            engagement<br />
+            to school. However, there is an imbalance with sending and <br />
+            receiving school communications from both teachers and parents.
+            <br />
+            <br />
+            Parents are feeling overwhelmed with all the communications and
+            <br />
+            messages and teachers are finding that often parents are not aware
+            of <br />
+            them. <br />
+            <br />
+            There are limitations and restrictions placed on parents and
+            guardians of <br />
+            certain types of family structures that prevents them from
+            engaging with <br />the school.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+
+    <div style="margin-top: 100px" class="container">
+      <h1 class="section-five-heading">Research Triangulation Summary</h1>
+      <div class="d-flex justify-content-center">
+        <div style="margin-right: 35px" class="box"></div>
+        <div class="flex-row">
+          <div class="box2"></div>
+          <p class="section-five-para-one">
+            Why is it so difficult for parents from non-traditional <br />
+            family structures access information and services <br />
+            for and to their children?
+          </p>
+        </div>
+      </div>
+
+      <div class="container cont d-flex justify-content-center">
+        <!-- TEXT 1 -->
+
+        <div id="sec-5" class="">
+          <div style="position: absolute; margin-top: 33px" class="line"></div>
+          <h3 style="margin-left: 38px" id="heading__Deco" class="section-five-heading-two">
+            observations
+          </h3>
+          <p class="section-five-para-two">
+            When the parent who is not the <br />
+            primary caregiver to the child try <br />
+            to access information on that <br />child, she has difficulty in
+            doing <br />
+            so because the system does not <br />
+            recognize her credentials as a <br />
+            parent to that child.
+          </p>
+        </div>
+
+        <!-- TEXT 2 -->
+
+        <div style="margin-left: 30px" class="">
+          <div style="position: absolute; margin-top: 33px" class="line"></div>
+          <h3 style="margin-left: 38px" id="heading__Deco" class="section-five-heading-two">
+            interview
+          </h3>
+          <p class="section-five-para-two">
+            “I can only do it for one girl and <br />
+            not both. And for me to add my <br />stepdaughter in, I need to
+            use <br />
+            my email address, but the school <br />
+            has my email address. But the <br />app does not let me. The other
+            <br />option doesn’t work either." <br />
+            <span> Quote from participant</span>
+          </p>
+        </div>
+
+        <!-- TEXT 3-->
+        <div style="margin-left: 30px; position: relative" class="">
+          <div style="position: absolute; margin-top: 33px" class="line"></div>
+          <h3 style="margin-left: 38px" class="section-five-heading-two">
+            literature reviews
+          </h3>
+          <p class="section-five-para-two">
+            Family structures have had a <br />
+            major shift in its diversity within <br />
+            the last two decades. However, <br />
+            the long-standing educational <br />
+            and other social structure are <br />
+            not reflective of this societal shift <br />
+            and often leaves out families <br />
+            who do not fit the traditional <br />
+            definition of family (Thompson, <br />
+            2022; Baker et al., 2016).
+          </p>
+        </div>
+      </div>
+
+      <div id="section-five-id" class="container">
+        <h1 class="section-five-heading-three d-flex justify-content-start">
+          Convergence
+        </h1>
+        <p class="">
+          With an increase in diversity within the Canadian population, family
+          status are no longer limited to <br />
+          its traditional definition of nuclear family, but expanded to
+          include other family structures. Non- <br />traditional families
+          should not be made to feel unwelcomed or discriminated in the social
+          areas of <br />
+          services and facilities, including education for their children. Yet
+          very little attention has been paid <br />
+          to address issues of accessibility and inclusivity related to family
+          status and services. Thus, parents <br />
+          and families from these structures continue to experience barriers
+          within a society built with <br />
+          heteronormative notions, which prevents them from living a quality
+          family life.
+        </p>
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div style="margin-top: 100px" class="container">
+      <div style="position: absolute; margin-top: 33px" class="line2"></div>
+      <h1 class="section-six-heading">Ideate: Let’s Get Creative</h1>
+      <div style="margin-top: 30px" class="d-flex justify-content-center">
+        <p class="section-six-para-one">
+          Fueled by my research and my own, let's say, "passionate
+          frustration" from feeling excluded <br />
+          in crucial communication. I crafted three distinct personas, each
+          representing a unique set of <br />
+          constraints:
+        </p>
+      </div>
+   
+      <!-- HEAD 1 -->
+      <div>
+        <h3 class="section-six-heading-two">Permanent constraint</h3>
+        <p class="section-six-para-one">Meet Marc, his information is not listed in his children’s school record system, and therefore, <br> denied communications. </p>
+  
+        <!-- SEC _ 1 -->
+        
+        <div id="main_pic" class="d-flex justify-content-center">
+          <img id="main_pic" src="./img/marc1 (1).png" alt="">
+        </div>
+  
+        <div id="swipee" class="swipe-container">
+          <div class="swipe-images">
+              <img src="./img/slider 1.png" alt="Image 1" class="swipe active">
+              <img src="./img/slider 2.png" alt="Image 2" class="swipe">
+              <img src="./img/slider 3.png" alt="Image 3" class="swipe">
+          </div>
+          <div class="swipe-indicators">
+              <div class="swipe-indicator active" data-slide="0"></div>
+              <div class="swipe-indicator" data-slide="1"></div>
+              <div class="swipe-indicator" data-slide="2"></div>
+          </div>
+      </div>
+
+      <!-- SEC _ 2 -->
+      <div id="main_pic" class="d-flex justify-content-center">
+        <img id="main_pic" src="./img/marc2.png" alt="">
+      </div>
+      
+      <div id="right" class="right-container">
+        <div class="right-images">
+            <img src="./img/Property 1=Default (3).png" alt="Image 1" class="right actives">
+            <img src="./img/right- 2.png" alt="Image 2" class="right">
+            <img src="./img/right- 3.png" alt="Image 3" class="right">
+            <img src="./img/right- 4.png" alt="Image 4" class="right">
+        </div>
+        <div class="right-indicatores">
+            <div class="right-indicator actives" data-slide="0"></div>
+            <div class="right-indicator" data-slide="1"></div>
+            <div class="right-indicator" data-slide="2"></div>
+            <div class="right-indicator" data-slide="3"></div>
+        </div>
+    </div>
+     
+    
+    </div>
+
+    <!-- HEAD 2 -->
+    <div>
+      <h3 class="section-six-heading-two">Permanent constraint</h3>
+      <p class="section-six-para-one">Meet Marc, his information is not listed in his children’s school record system, and therefore, <br> denied communications. </p>
+
+      <!-- SEC _ 1 -->
+      
+      <div id="main_pic" class="d-flex justify-content-center">
+        <img id="main_pic" src="./img/amy1.png" alt="">
+      </div>
+
+      <div id="left" class="left-container">
+        <div class="left-images">
+            <img src="./img/left -1.png" alt="Image 1" class="left activ">
+            <img src="./img/left -2.png" alt="Image 2" class="left">
+            <img src="./img/left -3.png" alt="Image 3" class="left">
+        </div>
+        <div class="left-indicatorss">
+            <div class="left-indicator activ" data-slide="0"></div>
+            <div class="left-indicator" data-slide="1"></div>
+            <div class="left-indicator" data-slide="2"></div>
+        </div>
+    </div>
+
+    <!-- SEC _ 2 -->
+
+    <div id="main_pic" class="d-flex justify-content-center">
+      <img id="main_pic" src="./img/amy2.png" alt="">
+    </div>
+    
+    <div id="back" class="back-container">
+      <div class="back-images">
+          <img src="./img/left1.png" alt="Image 1" class="back activy">
+          <img src="./img/left2.png" alt="Image 2" class="back">
+          <img src="./img/left3.png" alt="Image 3" class="back">
+          <img src="./img/left4.png" alt="Image 4" class="back">
+      </div>
+      <div class="back-indicat">
+          <div class="back-indicator activ" data-slide="0"></div>
+          <div class="back-indicator" data-slide="1"></div>
+          <div class="back-indicator" data-slide="2"></div>
+          <div class="back-indicator" data-slide="3"></div>
+      </div>
+  </div>
+   
+  
+  </div>
+
+
+  <!-- HEAD 3 -->
+
+  <div>
+    <h3 class="section-six-heading-two">Permanent constraint</h3>
+    <p class="section-six-para-one">Meet Marc, his information is not listed in his children’s school record system, and therefore, <br> denied communications. </p>
+
+    <!-- SEC _ 1 -->
+    
+    <div id="main_pic" class="d-flex justify-content-center">
+      <img id="main_pic" src="./img/joe1.png" alt="">
+    </div>
+
+    <div id="joe" class="joe-container">
+      <div class="joe-images">
+          <img src="./img/back1.png" alt="Image 1" class="joe activv">
+          <img src="./img/back2.png" alt="Image 2" class="joe">
+          <img src="./img/back3.png" alt="Image 3" class="joe">
+      </div>
+      <div class="joe-indicatorsy">
+          <div class="joe-indicator activv" data-slide="0"></div>
+          <div class="joe-indicator" data-slide="1"></div>
+          <div class="joe-indicator" data-slide="2"></div>
+      </div>
+  </div>
+
+  <!-- SEC _ 2 -->
+
+  <div id="main_pic" class="d-flex justify-content-center">
+    <img id="main_pic" src="./img/joe2.png" alt="">
+  </div>
+  
+  <div id="last" class="last-container">
+    <div class="back-images">
+        <img src="./img/joe1 (2).png" alt="Image 1" class="last acti">
+        <img src="./img/joe2 (2).png" alt="Image 2" class="last">
+        <img src="./img/joe3.png" alt="Image 3" class="last">
+        <img src="./img/joe4.png" alt="Image 4" class="last">
+    </div>
+    <div class="last-indicatr">
+        <div class="last-indicator acti" data-slide="0"></div>
+        <div class="last-indicator" data-slide="1"></div>
+        <div class="last-indicator" data-slide="2"></div>
+        <div class="last-indicator" data-slide="3"></div>
+    </div>
+</div>
+ 
+
+</div>
+
+
+  <!-- HEAD 4 -->
+
+  <div>
+    <!-- SEC _ 1 -->
+
+  <div id="main_pic" class="d-flex justify-content-center">
+    <img id="main_pic" src="./img/mainnn.png" alt="">
+  </div>
+  
+  <div id="see" class="see-container">
+    <div class="see-images">
+        <img src="./img/main1.png" alt="Image 1" class="see act">
+        <img src="./img/main 2.png" alt="Image 2" class="see">
+        <img src="./img/main 3.png" alt="Image 3" class="see">
+        <img src="./img/main 4.png" alt="Image 4" class="see">
+        <img src="./img/main 5.png" alt="Image 5" class="see">
+        <img src="./img/main 6.png" alt="Image 6" class="see">
+    </div>
+    <div class="see-indica">
+        <div class="see-indicator act" data-slide="0"></div>
+        <div class="see-indicator" data-slide="1"></div>
+        <div class="see-indicator" data-slide="2"></div>
+        <div class="see-indicator" data-slide="3"></div>
+        <div class="see-indicator" data-slide="4"></div>
+        <div class="see-indicator" data-slide="5"></div>
+    </div>
+</div>
+ 
+
+</div>
+
+    </div>  
+
+
+  </div>
+
+
+
+  <script>
+    // SWIPE JavaScript to handle slider indicators
+const swipes = document.querySelectorAll('.swipe');
+const indicators = document.querySelectorAll('.swipe-indicator');
+const activeClass = 'active';
+
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActiveSwipe(index);
+    });
+});
+
+function setActiveSwipe(index) {
+    swipes.forEach((slide) => {
+        slide.classList.remove(activeClass);
+    });
+    swipes[index].classList.add(activeClass);
+
+    indicators.forEach((indicator) => {
+        indicator.classList.remove(activeClass);
+    });
+    indicators[index].classList.add(activeClass);
+}
+
+
+
+
+
+
+    // right JavaScript to handle slider indicators
+    const rights = document.querySelectorAll('.right');
+const indicatores = document.querySelectorAll('.right-indicator');
+const activesClass = 'actives';
+
+indicatores.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActiveRight(index);
+    });
+});
+
+function setActiveRight(index) {
+    rights.forEach((slide) => {
+        slide.classList.remove(activesClass);
+    });
+    rights[index].classList.add(activesClass);
+
+    indicatores.forEach((indicator) => {
+        indicator.classList.remove(activesClass);
+    });
+    indicatores[index].classList.add(activesClass);
+}
+
+
+
+
+    // LEFT JavaScript to handle slider indicators
+    const lefts = document.querySelectorAll('.left');
+const indicatorss = document.querySelectorAll('.left-indicator');
+const activClass = 'activ';
+
+indicatorss.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActivLeft(index);
+    });
+});
+
+function setActivLeft(index) {
+    lefts.forEach((left) => {
+        left.classList.remove(activClass);
+    });
+    lefts[index].classList.add(activClass);
+
+    indicatorss.forEach((indicator) => {
+        indicator.classList.remove(activClass);
+    });
+    indicatorss[index].classList.add(activClass);
+}
+
+
+   //BACK JavaScript to handle slider indicators
+   const backs = document.querySelectorAll('.back');
+const indicat = document.querySelectorAll('.back-indicator');
+const activyClass = 'activy';
+
+indicat.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActivyback(index);
+    });
+});
+
+function setActivyback(index) {
+  backs.forEach((back) => {
+    back.classList.remove(activyClass);
+    });
+    backs[index].classList.add(activyClass);
+
+    indicat.forEach((indicator) => {
+        indicator.classList.remove(activyClass);
+    });
+    indicat[index].classList.add(activyClass);
+}
+
+    // JOE JavaScript to handle slider indicators
+    const joes = document.querySelectorAll('.joe');
+const indicatorsy = document.querySelectorAll('.joe-indicator');
+const activvClass = 'activv';
+
+indicatorsy.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActivvJoe(index);
+    });
+});
+
+function setActivvJoe(index) {
+    joes.forEach((joe) => {
+        joe.classList.remove(activvClass);
+    });
+    joes[index].classList.add(activvClass);
+
+    indicatorsy.forEach((indicator) => {
+        indicator.classList.remove(activvClass);
+    });
+    indicatorsy[index].classList.add(activvClass);
+}
+
+    // LAST JavaScript to handle slider indicators
+    const lasts = document.querySelectorAll('.last');
+const indicatr = document.querySelectorAll('.last-indicator');
+const actiClass = 'acti';
+
+indicatr.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        setActiLast(index);
+    });
+});
+
+function setActiLast(index) {
+    lasts.forEach((last) => {
+        last.classList.remove(actiClass);
+    });
+    lasts[index].classList.add(actiClass);
+
+    indicatr.forEach((indicator) => {
+        indicator.classList.remove(actiClass);
+    });
+    indicatr[index].classList.add(actiClass);
+}
+
+// SEE JavaScript to handle slider indicators
+  const sees = document.querySelectorAll('.see');
+  const indica = document.querySelectorAll('.see-indicator');
+  const actClass = 'act';
+
+  indica.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+          setActSee(index);
+      });
+  });
+
+  function setActSee(index) {
+      sees.forEach((see) => {
+          see.classList.remove(actClass);
+      });
+      sees[index].classList.add(actClass);
+
+      indica.forEach((indicator) => {
+          indicator.classList.remove(actClass);
+      });
+      indica[index].classList.add(actClass);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+     document.addEventListener("DOMContentLoaded", function () {
+      const slides = document.querySelectorAll(".carousel-slide");
+      const indicators = document.querySelectorAll(".indicator");
+      const nextButton = document.querySelector(".next");
+
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        if (index < 0) {
+          currentSlide = slides.length - 1;
+        } else if (index >= slides.length) {
+          currentSlide = 0;
+        }
+
+        slides.forEach((slide) => {
+          slide.style.display = "none";
+        });
+
+        slides[currentSlide].style.display = "block";
+
+        indicators.forEach((indicator) => {
+          indicator.classList.remove("active");
+        });
+
+        indicators[currentSlide].classList.add("active");
+      }
+
+      showSlide(currentSlide);
+
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener("click", function () {
+          showSlide(index);
+        });
+      });
+
+      nextButton.addEventListener("click", function () {
+        currentSlide++;
+        showSlide(currentSlide);
+      });
+
+      function autoSlide() {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+
+      const interval = setInterval(autoSlide, 7000);  //Change slide every 3 seconds (adjust as needed)
+
+      // Pause auto slide on hover
+      slides.forEach((slide) => {
+        slide.addEventListener("mouseenter", function () {
+          clearInterval(interval);
+        });
+
+        slide.addEventListener("mouseleave", function () {
+          interval = setInterval(autoSlide, 7000);
+        });
+      });
+    });
+
+
+
+  </script>
+</body>
+
+</html>
