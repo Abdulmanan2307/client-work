@@ -62,11 +62,11 @@
 
 .section-one-heading {
   font-family: Noto Serif;
-  font-size: 68px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 65px;
+  /* line-height: 65px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: left; */
   color: rgba(0, 51, 33, 1);
 }
 
@@ -247,6 +247,42 @@
     display: none;
   }
   .see-indicator{
+    display: none;
+  }
+
+
+  #pic{
+    display: none;
+  }
+
+  .pic-images{
+    display: none;
+  }
+  .pic-indicator{
+    display: none;
+  }
+
+
+  #wipe{
+    display: none;
+  }
+
+  .wipe-images{
+    display: none;
+  }
+  .wipe-indicator{
+    display: none;
+  }
+
+
+  #ipe{
+    display: none;
+  }
+
+  .ipe-images{
+    display: none;
+  }
+  .ipe-indicator{
     display: none;
   }
 } 
@@ -492,7 +528,7 @@ color: rgba(0, 168, 107, 1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+
 }
 
 /* Apply styles for the slider images container */
@@ -551,7 +587,7 @@ color: rgba(0, 168, 107, 1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+
 }
 
 /* Apply styles for the slider images container */
@@ -666,7 +702,7 @@ color: rgba(0, 168, 107, 1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+
 }
 
 /* Apply styles for the slider images container */
@@ -778,7 +814,6 @@ color: rgba(0, 168, 107, 1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
 }
 
 /* Apply styles for the slider images container */
@@ -825,7 +860,7 @@ color: rgba(0, 168, 107, 1);
   background-color: #3498db;
 }
 
-/* SWIPE */
+/* SEE */
 
 
 /* Apply styles for the slider container */
@@ -879,4 +914,280 @@ color: rgba(0, 168, 107, 1);
 /* Style the active indicator */
 .see-indicator.act {
   background-color: #3498db;
+}
+
+
+/* IMAGE 1 */
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#textButton img {
+  max-width: 100%;
+  height: auto;
+}
+
+#textContainer {
+  margin-top: 20px;
+  max-width: 100%;
+  display: none; /* Hide the text container initially */
+}
+
+#displayText {
+  font-size: 16px;
+}
+.section--heading{
+  text-decoration: underline;
+  font-family: Noto Sans;
+font-size: 32px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0em;
+
+}
+
+.section--para{
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+
+
+
+/* PIC 1 */
+
+/* Apply styles for the slider container */
+.pic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+/* Apply styles for the slider images container */
+.picslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.pic {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.pic.tive {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.pic-indicatorrs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.pic-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.pic-indicator.tive {
+  background-color: #3498db;
+}
+
+.Hheading{
+  font-family: Noto Serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+text-align: start;
+color: #00A86B;
+}
+
+#pparagrap{
+  margin-left: 40px;
+}
+
+.pparagraph{
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+
+text-align: left;
+color: #003321;
+}
+
+.picturee-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.s-para{
+  font-family: Noto Sans;
+font-size: 28px;
+font-weight: 600;
+line-height: 38px;
+align-items: baseline;
+
+
+}
+.s-text{
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+
+
+}
+
+
+/* WIPE */
+
+
+/* Apply styles for the slider container */
+.wipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+/* Apply styles for the slider images container */
+.wipeslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.wipe {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.wipe.ve {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.wipe-indicatoors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.wipe-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.wipe-indicator.ve {
+  background-color: #3498db;
+}
+
+
+
+/* SWIPE */
+
+
+/* Apply styles for the slider container */
+.ipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Apply styles for the slider images container */
+.ipeslider-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply styles for individual images */
+.ipe {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style the active slide */
+.ipe.v {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Apply styles for the slider indicators container */
+.ipe-indicatoorrs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust spacing between images and indicators */
+}
+
+/* Apply styles for individual slider indicators */
+.ipe-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the active indicator */
+.ipe-indicator.v {
+  background-color: #3498db;
+}
+
+.border__radi{
+  width: 1244px;
+height: 465px;
+top: 15453.8px;
+left: 195px;
+border-radius: 175px, 0px, 175px, 0px;
+
+  background-color: rgba(89, 198, 159, 1);
 }
