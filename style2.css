@@ -256,17 +256,23 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  margin-right: 32px;
 }
 
 /* Style the list items */
 .nav-list li {
   text-align: center;
+  font-family: Noto Sans;
+font-size: 24px;
+font-weight: 400;
+margin-left: 10px;
+
 }
 
 /* Style the links */
 .nav-list a {
   text-decoration: none;
-  color: inherit;
+  color: blue;
   display: flex;
   align-items: center;
 }
@@ -309,6 +315,14 @@ body {
       margin: 5px 0;
   }
 
+  /* ..nav-list a{
+    display: n;
+  } */
+
+  #picturess{
+    display: none ;
+  }
+
   
   
 }
@@ -318,6 +332,10 @@ body {
   .navbar-toggle,
   .icon {
       display: none;
+  }
+
+  #pic{
+    display: none;
   }
   
 }
@@ -329,7 +347,7 @@ font-weight: 400;
 line-height: 33px;
 letter-spacing: 0em;
 text-align: left;
-margin-right: 25px;
+
 color: #003321;
 }
 
